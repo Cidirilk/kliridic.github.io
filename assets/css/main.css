@@ -2,6 +2,7 @@
 
 :root {
     --profile-theme: #4fb24f;
+    --profile-black: #0f211c;
     --color-black: #000000;
     --color-white: #ffffff;
     --color-grey: #999999;
@@ -629,6 +630,9 @@ h6 {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    flex: 0 0 3.5rem;
+    min-width: 3.5rem;
     background: var(--profile-theme);
     /* background: rgba(79, 178, 134, 0.12); */
     color: var(--profile-black);
@@ -863,6 +867,9 @@ h6 {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
+    aspect-ratio: 1 / 1;
+    flex: 0 0 3.5rem;
+    min-width: 3.5rem;
     /* background: rgba(79, 178, 134, 0.12); */
     background: var(--profile-theme);
     color: var(--profile-black);
