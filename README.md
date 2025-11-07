@@ -5,13 +5,13 @@ The Kliridis Portfolio is a personal portfolio website designed to showcase the 
 
 ## Project Structure
 ```
-kliridis-portfolio
+kliridis
 ├── index.html          # Main HTML document for the portfolio
 ├── assets
 │   ├── css
 │   │   └── main.css    # Styles for the portfolio
 │   ├── js
-│   │   └── script.js    # JavaScript for interactivity
+│   │   └── script.js   # JavaScript for interactivity
 │   └── img             # Directory for images
 ├── .gitignore          # Files and directories to ignore by Git
 ├── package.json        # npm configuration file
@@ -22,21 +22,6 @@ kliridis-portfolio
 - **Responsive Design**: The portfolio is designed to be fully responsive, adapting to various screen sizes using CSS media queries.
 - **Interactive Navigation**: The navigation menu includes a toggle feature for mobile devices, enhancing user experience.
 - **Dynamic Content**: JavaScript is used to handle animations and dynamic content loading, providing a smooth user experience.
-
-## Setup Instructions
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd kliridis-portfolio
-   ```
-3. Install dependencies (if any):
-   ```
-   npm install
-   ```
-4. Open `index.html` in your web browser to view the portfolio.
 
 ## Usage
 - The portfolio includes sections for Home, About, Work, Education, Skills, and Interests.

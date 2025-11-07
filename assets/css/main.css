@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap");
 
 :root {
-    --profile-theme: #66ff00;
+    --profile-theme: #4fb24f;
     --color-black: #000000;
     --color-white: #ffffff;
     --color-grey: #999999;
@@ -21,7 +21,7 @@ body {
     font-family: var(--font-primary);
     line-height: 1.6;
     background-color: var(--color-white);
-    background-image: radial-gradient(circle at top right, rgba(102, 255, 0, 0.12), transparent 45%), radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.04), transparent 35%);
+    background-image: radial-gradient(circle at top right, rgba(79, 178, 134, 0.12), transparent 45%), radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.04), transparent 35%);
     padding-bottom: 3.5rem;
 }
 
@@ -54,7 +54,7 @@ h6 {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #4dcc00;
+    background: #3a8c6c;
 }
 
 /* Loader */
@@ -66,7 +66,7 @@ h6 {
     height: 100%;
     z-index: 9999;
     background-color: var(--color-white);
-    background-image: radial-gradient(circle at top right, rgba(102, 255, 0, 0.12), transparent 45%), radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.04), transparent 35%);
+    background-image: radial-gradient(circle at top right, rgba(79, 178, 134, 0.12), transparent 45%), radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.04), transparent 35%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,8 +95,8 @@ h6 {
     position: absolute;
     inset: -1rem;
     border-radius: 50%;
-    border: 0.2rem solid rgba(102, 255, 0, 0.12);
-    box-shadow: 0 0 2rem rgba(102, 255, 0, 0.25);
+    border: 0.2rem solid rgba(79, 178, 134, 0.12);
+    box-shadow: 0 0 2rem rgba(79, 178, 134, 0.25);
 }
 
 .loader-text-block {
@@ -294,8 +294,8 @@ h6 {
 }
 
 .card-surface {
-    background: rgba(102, 255, 0, 0.05);
-    border: 1px solid rgba(102, 255, 0, 0.15);
+    background: rgba(79, 178, 134, 0.05);
+    border: 1px solid rgba(79, 178, 134, 0.15);
     border-radius: 1rem;
     padding: 2.5rem;
     box-shadow: 0 1.25rem 3rem rgba(0, 0, 0, 0.06);
@@ -355,8 +355,8 @@ h6 {
     position: absolute;
     inset: -1.35rem;
     border-radius: 50%;
-    border: 0.15rem solid rgba(102, 255, 0, 0.18);
-    box-shadow: 0 0 2rem rgba(102, 255, 0, 0.25);
+    border: 0.15rem solid rgba(79, 178, 134, 0.18);
+    box-shadow: 0 0 2rem rgba(79, 178, 134, 0.25);
 }
 
 .profile-pic {
@@ -365,7 +365,7 @@ h6 {
     object-fit: cover;
     border-radius: 50%;
     border: 0.125rem solid var(--profile-theme);
-    box-shadow: 0 0 1.25rem rgba(102, 255, 0, 0.2);
+    box-shadow: 0 0 1.25rem rgba(79, 178, 134, 0.2);
     position: relative;
     z-index: 1;
 }
@@ -441,7 +441,7 @@ h6 {
 }
 
 .contact-info i {
-    color: var(--profile-theme);
+    color: var(--profile-black);
     width: 1.5rem;
     display: inline-flex;
     justify-content: center;
@@ -530,7 +530,7 @@ h6 {
 
 .contact-button:hover {
     transform: translateY(-0.125rem);
-    box-shadow: 0 0.5rem 1.5rem rgba(102, 255, 0, 0.25);
+    box-shadow: 0 0.5rem 1.5rem rgba(79, 178, 134, 0.25);
 }
 
 .contact-map {
@@ -630,12 +630,12 @@ h6 {
     height: 3.5rem;
     border-radius: 50%;
     background: var(--profile-theme);
-    /* background: rgba(102, 255, 0, 0.12); */
+    /* background: rgba(79, 178, 134, 0.12); */
     color: var(--profile-black);
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    box-shadow: 0 0 1.5rem rgba(102, 255, 0, 0.18);
+    box-shadow: 0 0 1.5rem rgba(79, 178, 134, 0.18);
 }
 
 .timeline::before {
@@ -711,6 +711,7 @@ h6 {
 .timeline-date {
     color: var(--color-grey);
     font-size: 0.875rem;
+    text-transform: uppercase;
 }
 
 /* Education Section */
@@ -723,8 +724,8 @@ h6 {
 }
 
 .education-card {
-    background: rgba(102, 255, 0, 0.05);
-    border: 1px solid rgba(102, 255, 0, 0.15);
+    background: rgba(79, 178, 134, 0.05);
+    border: 1px solid rgba(79, 178, 134, 0.15);
     border-radius: 1rem;
     padding: 2rem 2.25rem;
     display: flex;
@@ -748,13 +749,13 @@ h6 {
     width: 2.6rem;
     height: 2.6rem;
     border-radius: 50%;
-    /* background: rgba(102, 255, 0, 0.12); */
+    /* background: rgba(79, 178, 134, 0.12); */
     background: var(--profile-theme);
     color: var(--profile-black);
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    box-shadow: 0 0 1rem rgba(102, 255, 0, 0.2);
+    box-shadow: 0 0 1rem rgba(79, 178, 134, 0.2);
 }
 
 .education-list {
@@ -813,7 +814,7 @@ h6 {
     height: 1rem;
     border-radius: 50%;
     background: var(--profile-theme);
-    box-shadow: 0 0 0 0.2rem rgba(102, 255, 0, 0.2);
+    box-shadow: 0 0 0 0.2rem rgba(79, 178, 134, 0.2);
 }
 
 .education-item h4 {
@@ -862,13 +863,13 @@ h6 {
     width: 3.5rem;
     height: 3.5rem;
     border-radius: 50%;
-    /* background: rgba(102, 255, 0, 0.12); */
+    /* background: rgba(79, 178, 134, 0.12); */
     background: var(--profile-theme);
     color: var(--profile-black);
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    box-shadow: 0 0 1.5rem rgba(102, 255, 0, 0.18);
+    box-shadow: 0 0 1.5rem rgba(79, 178, 134, 0.18);
 }
 
 .skill-title {
@@ -912,7 +913,7 @@ h6 {
 .skill-bar {
     position: relative;
     height: 0.625rem;
-    background: rgba(102, 255, 0, 0.15);
+    background: rgba(79, 178, 134, 0.15);
     border-radius: 999px;
     overflow: hidden;
 }
@@ -920,7 +921,7 @@ h6 {
 .skill-level {
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, var(--profile-theme), #a6ff66);
+    background: linear-gradient(90deg, var(--profile-theme), #bce3d2);
     transform-origin: left;
     transform: scaleX(0);
     transition: transform 1s ease;
@@ -983,7 +984,7 @@ h6 {
 }
 
 .interests-list li:hover {
-    background: rgba(102, 255, 0, 0.1);
+    background: rgba(79, 178, 134, 0.1);
     transform: translateY(-0.3125rem);
 }
 
@@ -1210,7 +1211,7 @@ h6 {
     border-radius: 50%;
     border: 0.5rem solid rgba(0, 0, 0, 0.08);
     border-top-color: var(--profile-theme);
-    border-bottom-color: rgba(102, 255, 0, 0.35);
+    border-bottom-color: rgba(79, 178, 134, 0.35);
     animation: profile-spin 6s linear infinite;
 }
 
@@ -1240,3 +1241,4 @@ h6 {
     padding: 0.6rem 1rem;
     z-index: 2000;
 }
+
