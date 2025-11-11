@@ -1557,6 +1557,21 @@ strong {
 
     .theme-toggle {
         font-size: 1.125rem;
+        color: var(--profile-theme);
+    }
+
+    .theme-toggle:focus,
+    .theme-toggle:active {
+        outline: none;
+        color: var(--profile-theme);
+        transform: none;
+        background: transparent;
+    }
+
+    .theme-toggle:hover {
+        color: var(--profile-theme);
+        transform: none;
+        background: transparent;
     }
 
     .menu-toggle {
