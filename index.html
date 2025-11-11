@@ -85,6 +85,53 @@
       </div>
     </header>
 
+    <!-- Social Link Modal -->
+    <div class="social-modal" id="socialModal">
+      <div class="social-modal-backdrop"></div>
+      <div class="social-modal-content">
+        <button class="social-modal-close" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="social-preview-card">
+          <div class="social-preview-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3 class="social-preview-title">GitHub</h3>
+          <p class="social-preview-description">
+            Check out my code repositories and projects
+          </p>
+          <a
+            href="#"
+            class="social-preview-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Open in New Tab</span>
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hobby Modal -->
+    <div class="hobby-modal" id="hobbyModal">
+      <div class="hobby-modal-backdrop"></div>
+      <div class="hobby-modal-content">
+        <button class="hobby-modal-close" aria-label="Close modal">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="hobby-preview-card">
+          <div class="hobby-preview-icon">
+            <i class="fas fa-music"></i>
+          </div>
+          <h3 class="hobby-preview-title">Music</h3>
+          <p class="hobby-preview-description">
+            Exploring sound and rhythm through creative compositions
+          </p>
+        </div>
+      </div>
+    </div>
+
     <div class="wrapper animate-bottom" id="mainContent">
       <main class="main-content">
         <!-- Home Section -->
@@ -139,16 +186,28 @@
                 </li>
               </ul>
               <div class="social-links">
-                <a href="#" aria-label="LinkedIn"
-                  ><i class="fab fa-linkedin"></i
+                <a
+                  href="#"
+                  class="social-link-trigger"
+                  data-social="soundcloud"
+                  data-url="https://soundcloud.com/cidirilk"
+                  aria-label="SoundCloud"
+                  ><i class="fab fa-soundcloud"></i
                 ></a>
-                <a href="#" aria-label="Facebook"
-                  ><i class="fab fa-facebook"></i
+                <a
+                  href="#"
+                  class="social-link-trigger"
+                  data-social="github"
+                  data-url="https://github.com/Cidirilk"
+                  aria-label="GitHub"
+                  ><i class="fab fa-github"></i
                 ></a>
-                <a href="#" aria-label="Twitter"
-                  ><i class="fab fa-twitter"></i
-                ></a>
-                <a href="#" aria-label="Instagram"
+                <a
+                  href="#"
+                  class="social-link-trigger"
+                  data-social="instagram"
+                  data-url="https://www.instagram.com/cidirilk/"
+                  aria-label="Instagram"
                   ><i class="fab fa-instagram"></i
                 ></a>
               </div>
@@ -398,11 +457,21 @@
                 energised and curious outside the office.
               </p>
               <ul class="interests-list">
-                <li><i class="fas fa-rainbow"></i><span>Yoga</span></li>
-                <li><i class="fas fa-utensils"></i><span>Cooking</span></li>
-                <li><i class="fas fa-music"></i><span>Music</span></li>
-                <li><i class="fas fa-book"></i><span>Self-Learning</span></li>
-                <li><i class="fas fa-basketball"></i><span>Sports</span></li>
+                <li class="hobby-trigger" data-hobby="yoga">
+                  <i class="fas fa-rainbow"></i><span>Yoga</span>
+                </li>
+                <li class="hobby-trigger" data-hobby="cooking">
+                  <i class="fas fa-utensils"></i><span>Cooking</span>
+                </li>
+                <li class="hobby-trigger" data-hobby="music">
+                  <i class="fas fa-music"></i><span>Music</span>
+                </li>
+                <li class="hobby-trigger" data-hobby="learning">
+                  <i class="fas fa-book"></i><span>Self-Learning</span>
+                </li>
+                <li class="hobby-trigger" data-hobby="sports">
+                  <i class="fas fa-basketball"></i><span>Sports</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -446,16 +515,28 @@
                   >Send Email</a
                 >
                 <div class="social-links">
-                  <a href="#" aria-label="LinkedIn"
-                    ><i class="fab fa-linkedin"></i
+                  <a
+                    href="#"
+                    class="social-link-trigger"
+                    data-social="soundcloud"
+                    data-url="https://soundcloud.com/cidirilk"
+                    aria-label="SoundCloud"
+                    ><i class="fab fa-soundcloud"></i
                   ></a>
-                  <a href="#" aria-label="Facebook"
-                    ><i class="fab fa-facebook"></i
+                  <a
+                    href="#"
+                    class="social-link-trigger"
+                    data-social="github"
+                    data-url="https://github.com/Cidirilk"
+                    aria-label="GitHub"
+                    ><i class="fab fa-github"></i
                   ></a>
-                  <a href="#" aria-label="Twitter"
-                    ><i class="fab fa-twitter"></i
-                  ></a>
-                  <a href="#" aria-label="Instagram"
+                  <a
+                    href="#"
+                    class="social-link-trigger"
+                    data-social="instagram"
+                    data-url="https://www.instagram.com/cidirilk/"
+                    aria-label="Instagram"
                     ><i class="fab fa-instagram"></i
                   ></a>
                 </div>
