@@ -336,16 +336,28 @@ h6 {
     color: var(--color-white);
     font-size: 1.25rem;
     cursor: pointer;
-    padding: 0.9375rem 0;
+    padding: 0.9375rem;
     transition: var(--transition);
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.25rem;
 }
 
 .theme-toggle:hover {
     color: var(--profile-theme);
-    transform: rotate(15deg);
+    transform: rotate(15deg) scale(1.1);
+    background: rgba(79, 178, 134, 0.1);
+}
+
+.theme-toggle:active {
+    transform: scale(0.95);
+}
+
+.theme-toggle i {
+    transition: transform 0.3s ease;
 }
 
 .menu-toggle {

@@ -45,11 +45,11 @@ initViewportHeightFix();
 // Page initialization
 function initPage() {
     loaderTimeout = setTimeout(showContent, 20000);
+    initTheme();
+    setupThemeToggle();
     setupNavigation();
     setupLoaderSkip();
     updateFooterYear();
-    setupThemeToggle();
-    initTheme();
 }
 
 // Show main content after loading
@@ -181,33 +181,44 @@ document.addEventListener('click', (e) => {
 // Theme Toggle Functionality
 function initTheme() {
     const savedTheme = localStorage.getItem('theme') || 'light';
-    setTheme(savedTheme);
+    setTheme(savedTheme, false);
 }
 
-function setTheme(theme) {
+function setTheme(theme, save = true) {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('theme', theme);
+    if (save) {
+        localStorage.setItem('theme', theme);
+    }
     
     const themeToggle = document.querySelector('.theme-toggle');
     if (themeToggle) {
         const icon = themeToggle.querySelector('i');
-        if (theme === 'dark') {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-        } else {
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
+        if (icon) {
+            if (theme === 'dark') {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                themeToggle.setAttribute('aria-label', 'Toggle light mode');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                themeToggle.setAttribute('aria-label', 'Toggle dark mode');
+            }
         }
     }
 }
 
 function setupThemeToggle() {
     const themeToggle = document.querySelector('.theme-toggle');
-    if (!themeToggle) return;
+    if (!themeToggle) {
+        console.error('Theme toggle button not found');
+        return;
+    }
     
-    themeToggle.addEventListener('click', () => {
+    themeToggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
         const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
+        setTheme(newTheme, true);
     });
 }
