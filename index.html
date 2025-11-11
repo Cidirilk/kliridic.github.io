@@ -15,7 +15,7 @@
     <script>
       // Initialize theme immediately to prevent flash
       (function () {
-        const savedTheme = localStorage.getItem("theme") || "light";
+        const savedTheme = localStorage.getItem("theme") || "dark";
         document.documentElement.setAttribute("data-theme", savedTheme);
       })();
     </script>
@@ -23,13 +23,41 @@
   </head>
   <body onload="initPage()">
     <div id="loader" aria-label="Loading content" tabindex="0">
+      <div class="loader-bg-particles">
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+        <span class="bg-particle"></span>
+      </div>
       <div class="loader-content">
+        <div class="loader-glow-orb"></div>
+        <div class="loader-glow-orb orb-2"></div>
         <div class="loader-text-block">
           <div class="loader-text-stage">
             <span class="loader-text loader-text-profile">CIDIRILK</span>
             <span class="loader-text loader-text-brand">KLIRIDIC</span>
           </div>
-          <span class="flash-text">click</span>
+          <div class="loader-divider"></div>
+          <span class="flash-text"> click to enter </span>
+        </div>
+      </div>
+      <div class="loader-rings">
+        <div class="orbit-ring ring-1">
+          <span class="ring-dot"></span>
+        </div>
+        <div class="orbit-ring ring-2">
+          <span class="ring-dot"></span>
+        </div>
+        <div class="orbit-ring ring-3">
+          <span class="ring-dot"></span>
         </div>
       </div>
     </div>
@@ -44,13 +72,12 @@
           <li><a href="#Education">Education</a></li>
           <li><a href="#Skills">Skills</a></li>
           <li><a href="#Interests">Interests</a></li>
-          <!-- <li><a href="#Portfolio">Portfolio</a></li> -->
           <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
       <div class="nav-actions">
-        <button class="theme-toggle" aria-label="Toggle dark mode">
-          <i class="fas fa-moon"></i>
+        <button class="theme-toggle" aria-label="Toggle light mode">
+          <i class="fas fa-sun"></i>
         </button>
         <button class="menu-toggle" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
@@ -85,11 +112,17 @@
                 <h3 class="title">QA Explorer</h3>
               </div>
               <p class="bio">
-                I'm a versatile and adaptable professional with a diverse
-                background in music and software testing. I have a strong
-                passion for learning and exploring new things. In my free time I
-                explore code &amp; music. Currently, I'm working as a Senior
-                DevOps Quality Assurance Software Engineer at Playtech.
+                I'm a <strong>versatile</strong> and
+                <strong>adaptable</strong> professional with a diverse
+                background in <strong>music</strong> and
+                <strong>software testing</strong>. I have a strong passion for
+                <strong>learning</strong> and <strong>exploring</strong> new
+                things. In my free time I explore <strong>code</strong> &amp;
+                <strong>music</strong>. Currently, I'm working as a
+                <strong
+                  >Senior DevOps Quality Assurance Software Engineer</strong
+                >
+                at <strong>Playtech</strong>.
               </p>
               <ul class="contact-info">
                 <li><i class="fas fa-calendar"></i>22nd Jun, 1994</li>
@@ -135,29 +168,48 @@
             <div class="about-content">
               <h3>Well</h3>
               <p>
-                As a QA Engineer with over seven years of experience in the
-                software development industry, I have developed a keen eye for
-                detail and a relentless drive to ensure that every product I
-                touch achieves the highest quality standards. My background in
-                computer science has provided me with a strong technical
-                foundation, enabling me to understand the intricacies of
-                software design and development.
+                I'm a versatile professional with over
+                <strong>7 years</strong> of experience in
+                <strong>software testing</strong> and
+                <strong>quality assurance</strong>. Currently i'm working as a
+                <strong>Senior DevOps QA Engineer</strong> at
+                <strong>Playtech</strong>. My background in Computer Science and
+                Software Engineering gives me a strong technical foundation to
+                deliver products that meet the
+                <strong>highest quality standards</strong> in my Cosmos.
               </p>
               <p>
-                My expertise lies in manual testing. I am good in multiple
-                programming languages, which allows me to adapt quickly to new
-                technologies and methodologies. My goal is to identify and
-                resolve potential issues before they affect the end-user,
-                ensuring a seamless and positive user experience.
+                I've developed a <strong>keen eye for detail</strong> and a
+                <strong>results-driven approach</strong>-successfully
+                <strong>reducing bug rates</strong> through meticulous test
+                planning and execution. I'm skilled in
+                <strong>manual testing</strong>, familiar with
+                <strong>multiple programming languages</strong>, and quick to
+                adapt to new technologies and methodologies.
+                <strong>Continuous improvement</strong> is part of my DNA, and I
+                enjoy <strong>mentoring</strong> junior QA engineers to foster
+                collaboration and knowledge sharing.
               </p>
               <p>
-                In my current role, I have successfully reduced the bug rate by
-                30% through meticulous test planning and execution. I am a firm
-                believer in continuous improvement and regularly engage in
-                professional development to stay abreast of the latest QA trends
-                and practices. I take pride in mentoring junior QA engineers and
-                fostering a collaborative team environment where knowledge
-                sharing leads to collective success.
+                Outside of work, I explore <strong>code</strong> and
+                <strong>music</strong>. In <strong>2017</strong>, I launched
+                <strong>Cidirilk</strong>, a creative project born from
+                curiosity, and today i'm working as a pieace of
+                <strong>cc_grooves_00357</strong> and as part of
+                <strong>ChaCha</strong>, a duo that experiments with
+                <strong>patterns</strong>, <strong>structure</strong>, and
+                <strong>unpredictability</strong>. Both worlds share the same
+                philosophy: <strong>debugging systems</strong>,
+                <strong>rewriting processes</strong>, and finding meaning
+                through <strong>change</strong>.
+              </p>
+              <p>
+                Whether <strong>testing software</strong> or
+                <strong>crafting sound</strong>, I strive for
+                <strong>precision</strong> in my profession and embrace
+                <strong>imperfection</strong> in my art,a
+                <strong>balanced harmony</strong> that keeps me
+                <strong>learning</strong> and <strong>evolving</strong>.
               </p>
             </div>
           </div>

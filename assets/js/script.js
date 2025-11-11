@@ -44,7 +44,7 @@ initViewportHeightFix();
 
 // Page initialization
 function initPage() {
-    loaderTimeout = setTimeout(showContent, 20000);
+    loaderTimeout = setTimeout(showContent, 200000);
     initTheme();
     setupThemeToggle();
     setupNavigation();
@@ -251,7 +251,7 @@ document.addEventListener('click', (e) => {
 
 // Theme Toggle Functionality
 function initTheme() {
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const savedTheme = localStorage.getItem('theme') || 'dark';
     setTheme(savedTheme, false);
 }
 
