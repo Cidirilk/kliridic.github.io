@@ -321,6 +321,7 @@ h6 {
     text-decoration: none;
     padding: 0.9375rem 0;
     transition: var(--transition);
+    text-transform: uppercase;
 }
 
 .nav-menu a:hover,
@@ -370,7 +371,7 @@ h6 {
 
 /* Section Layout Updates */
 .section {
-    padding: 5rem 3.75rem;
+    padding: 7rem 3.75rem;
     max-width: 87.5rem;
     width: 100%;
     margin: 0 auto;

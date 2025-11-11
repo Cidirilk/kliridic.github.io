@@ -147,18 +147,41 @@ function setupNavigation() {
     // Handle scroll
     window.addEventListener('scroll', () => {
         const sections = document.querySelectorAll('section');
+        const navHeight = document.querySelector('.topnav').offsetHeight;
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
         let current = '';
 
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            if (pageYOffset >= sectionTop - 60) {
-                current = section.getAttribute('id');
-            }
-        });
+        // Check if we're at the bottom of the page
+        const isAtBottom = scrollPosition + windowHeight >= documentHeight - 10;
+        
+        if (isAtBottom) {
+            // If at bottom, set last section (Contact) as active
+            const lastSection = sections[sections.length - 1];
+            current = lastSection.getAttribute('id');
+        } else {
+            // Otherwise, find which section we're currently viewing
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                
+                // Check if the scroll position is within this section
+                // We use a small buffer to make the transition smoother
+                if (scrollPosition >= sectionTop - navHeight - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+        }
+
+        // If we're at the very top, ensure Home is active
+        if (scrollPosition < 50) {
+            current = 'Home';
+        }
 
         navLinks.forEach(link => {
             link.classList.remove('active');
-            if (link.getAttribute('href').substring(1) === current) {
+            if (link.getAttribute('href') === '#' + current) {
                 link.classList.add('active');
             }
         });
