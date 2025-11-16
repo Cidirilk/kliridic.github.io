@@ -2154,4 +2154,9 @@ strong {
     padding: 0.6rem 1rem;
     z-index: 2000;
 }
+.site-footer a {
+    color: var(--profile-theme);
+    text-decoration: none;
+   
+}
 
