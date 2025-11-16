@@ -671,9 +671,11 @@ strong {
 }
 
 .theme-toggle:hover {
-    color: var(--profile-theme);
     transform: rotate(15deg) scale(1.1);
-    background: rgba(79, 178, 79, 0.1);
+}
+
+.theme-toggle:hover i {
+    color: var(--profile-theme);
 }
 
 .theme-toggle:active {
@@ -681,7 +683,7 @@ strong {
 }
 
 .theme-toggle i {
-    transition: transform 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 .menu-toggle {
@@ -1579,9 +1581,11 @@ strong {
     }
 
     .theme-toggle:hover {
-        color: var(--profile-theme);
         transform: none;
-        background: transparent;
+    }
+
+    .theme-toggle:hover i {
+        color: var(--profile-theme);
     }
 
     .menu-toggle {
