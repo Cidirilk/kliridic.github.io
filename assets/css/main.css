@@ -2157,4 +2157,5 @@ strong {
 .site-footer a {
     color: var(--profile-theme);
     text-decoration: none;
+    font-weight: 600;
 }
